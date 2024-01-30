@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Station météo</title>
+    <link rel="stylesheet" href="./meteo.css" />
+    <link rel="stylesheet" href="./meteoportable.css" />
+    <link rel="stylesheet" href="./meteotablette.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./img/soleil.png" alt="soleil" id="imagesoleil" />
+      <h1>Ma station météo</h1>
+      <img src="./img/nuage.png" alt="nuage" id="imagenuage" />
+    </header>
+    <main>
+      <div class="left">
+        <section id="date"></section>
+        <!--Section pour afficher la date-->
+        <section id="fete">Aujourd'hui c'est la saint &nbsp;</section>
+        <!--Section pour afficher le saint du jour-->
+        <section id="heure"></section>
+        <section id="timeday">
+          <!--Section pour l'heure du lever/coucher soleil phases lunaire-->
+          <div id="lever">
+            <img src="./img/leversoleil.png" alt="soleil levant" />
+          </div>
+          <div id="coucher">
+            <img src="./img/couchersoleil.png" alt="lune" id="lune" />
+          </div>
+          <div id="phlune">Phase lunaire Error 405 : API not found</div>
+        </section>
+      </div>
+      <div class="right">
+        <section class="temp">
+          <div id="min">
+            Min 
+            <span id="Min"></span>
+          </div>
+          <div id="moy">
+            Moy
+            <span id="Moy"></span>
+          </div>
+          <div id="max">
+            Max
+            <span id="Max"></span>
+          </div>
+        </section>
+        <section class="meteo">
+          <div id="j0">Auj. <br></div>
+          <div id="j1">Dem. <br></div>
+          <div id="j2">Ap-De. <br></div>
+        </section>
+        <section class="meteoimage">
+          <div id="J0"></div>
+          <div id="J1"></div>
+          <div id="J2"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <img id="copy" src="./img/index-removebg-preview.png" alt="mouette" />
+      </div>
+      <span id="copyr">(C)À moi !</span>
+
+      <div>Mentions légales À moi !</div>
+      <a href="./formulaire.html">Contacter À moi !</a>
+    </footer>
+    <script src="./meteo.js"></script>
+  </body>
+</html>

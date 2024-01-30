@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire météo</title>
+    <link rel="stylesheet" href="./meteocommun.css" />
+    <link rel="stylesheet" href="./meteoportable.css" />
+    <link rel="stylesheet" href="./meteotablette.css" />
+    <link rel="stylesheet" href="./formulaire.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./img/soleil.png" alt="soleil" id="imagesoleil" />
+      <h1>Ma station météo</h1>
+      <img src="./img/nuage.png" alt="nuage" id="imagenuage" />
+    </header>
+    <form action="checkForm.php" method="post">
+      <main>
+        <section>
+          <span id="Contact">Contact :</span>
+          <span id="question">Vous avez une question ? Envoyez la nous !</span>
+          <div>
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" />
+          </div>
+          <div>
+            <label for="mail">Email : *</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Votre mail"
+              required
+            />&nbsp;<span class="docMsg"
+              >Votre adresse mail doit respecter le format suivant :
+              xyz@example.com</span
+            >
+          </div>
+          <div>
+            <label for="sujet">Sujet : *</label>
+            <input
+              type="text"
+              name="sujet"
+              id="sujet"
+              placeholder="Le sujet de votre message"
+              required
+            />
+          </div>
+          <div>
+            <label for="com">Votre message: *</label> <br />
+            <textarea
+              name="com"
+              id="com"
+              cols="50"
+              rows="10"
+              placeholder="1000 caractères maximum"
+              required
+            ></textarea>
+            <span class="docMsg"
+              >Ce message ne doit pas excéder 1000 cafactères</span
+            >
+          </div>
+          <div id="obligatoire">Les champs munis d'un * sont obligatoires</div>
+          <div>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer tout</button>
+          </div>
+        </section>
+      </main>
+    </form>
+    <footer>
+      <img id="copy" src="./img/index-removebg-preview.png" alt="mouette" />
+      (C)À moi ! Mentions légales À moi !
+      <a href="./meteo.html">Retour à l'accueil</a>
+    </footer>
+    <script src="./formulaire.js"></script>
+  </body>
+</html>
